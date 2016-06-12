@@ -1,0 +1,17 @@
+.button {
+  &--autorization {
+    display: block;
+    width: 149px;
+    padding: 7px 15px;
+    border: 1px solid white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: $white-color;
+    &:hover {
+      background-color: $dark-blue-color;
+      border: 1px solid $dark-blue-color;
+    }
+  }
+}

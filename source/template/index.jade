@@ -1,11 +1,36 @@
 doctype html
-html
+html(lang="ru")
   include common/_head
-  body
+  body.welcome-body
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
+    //video(autoplay loop muted class="bgvideo" id="bgvideo")
+    //  source(src="assets/img/night.mp4", type="video/mp4")
+    header.header.header--start
 
-    .greating
-      .greating_text Hello! I'm your training builder.
-      .greating_picture
+      a.button.button--autorization(href="#") Авторизоваться
+
+    main.content
+      .card__wrap
+        section.card.card--front
+          div.avatar__wrap
+            img.avatar(src="assets/img/avatar_2.jpg", alt="Avatar")
+          h2.card__title Денис Корниенко
+          p.card__text Личный сайт веб разработчика
+          .social
+            a.social__link(href="https://vk.com/id29755814", target="_blank") Вконтакте
+              i.icon.icon-vkontakte
+            a.social__link(href="https://github.com/korney197823", target="_blank") GitHub
+              i.icon.icon-github
+            a.social__link(href="#") LinkedIn
+              i.icon.icon-linkedin
+          nav.menu.menu-mini
+            a.menu-mini__link(href="works.html") Мои работы
+            a.menu-mini__link(href="about.html") Обо мне
+            a.menu-mini__link(href="blog.html") Блог
+        section.card.card--back
+
+
+    footer.footer.footer-welcome
+      p.footer__description &copy; Денис Корниенко <br> создано с любовью в Loftschool 2016

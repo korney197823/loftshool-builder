@@ -1,0 +1,10 @@
+.header {
+  &--start {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    @media ($tablet-width) {
+      justify-content: flex-end;
+    }
+  }
+}

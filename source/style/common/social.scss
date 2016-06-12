@@ -1,0 +1,12 @@
+.social {
+  text-align: center;
+  margin-top: 22px;
+}
+
+.social__link {
+  display: inline-block;
+  font-size: 0;
+  &:not(:first-of-type) {
+    margin-left: 22px;
+  }
+}
