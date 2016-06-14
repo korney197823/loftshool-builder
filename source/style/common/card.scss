@@ -13,6 +13,12 @@
   line-height: 28px;
   color: #fff;
   text-align: center;
+  &--back {
+    text-transform: uppercase;
+    font-family: "sansus_webissimoregular", sans-serif ;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 }
 .card__text {
   margin-top: 7px;

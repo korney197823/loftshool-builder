@@ -1,0 +1,65 @@
+.form-autorization {
+  .text-input {
+    display: block;
+    width: 260px;
+    height: 45px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px 10px 9px 62px;
+    border: none;
+    font-size: 16px;
+  }
+
+}
+.text-label {
+  position: relative;
+  &:after {
+    position: absolute;
+    left: 36px;
+    top: 11px;
+    font-family: vk;
+    color: #c4cbcd;
+    content: '\e80b';
+    font-size: 18px;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    left: 20px;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #f0efe9;
+  }
+}
+.text-label--password:after {
+  font-family: vk;
+  content: '\e80c';
+}
+.form-autorization-question {
+  display: block;
+  color: $white-color;
+}
+.checkbox-input,
+.radio-input {
+  display: none;
+}
+.checkbox-label {
+  display: block;
+  width: 110px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  color: $white-color;
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: $dark-blue-color;
+    border-radius: 2px;
+  }
+}
