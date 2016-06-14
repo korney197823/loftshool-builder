@@ -37,8 +37,8 @@ html(lang="ru")
             input.text-input(type="text", name="login", placeholder="Логин")
             label.text-label.text-label--password
             input.text-input(type="password", name="password", placeholder="Пароль")
-            input.checkbox-input(type="checkbox")
-            label.checkbox-label Я человек
+            input.checkbox-input(type="checkbox", id="ok", checked)
+            label.checkbox-label(for="ok") Я человек
             span.form-autorization-question Вы точно не робот?
             input.radio-input(type="radio", id="yes", name="capcha")
             label.radio-label(for="yes") Я человек

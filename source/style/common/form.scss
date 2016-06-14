@@ -17,7 +17,7 @@
     position: absolute;
     left: 36px;
     top: 11px;
-    font-family: vk;
+    font-family: check;
     color: #c4cbcd;
     content: '\e80b';
     font-size: 18px;
@@ -33,7 +33,7 @@
   }
 }
 .text-label--password:after {
-  font-family: vk;
+  font-family: check;
   content: '\e80c';
 }
 .form-autorization-question {
@@ -55,11 +55,19 @@
   &:before {
     position: absolute;
     content: '';
-    left: 0;
-    right: 0;
     width: 20px;
     height: 20px;
-    background-color: $dark-blue-color;
+    background-color: #0548be;
     border-radius: 2px;
+    left: 0;
+    right: 0;
   }
+}
+.checkbox-input:checked + .checkbox-label:before {
+  font-family: check;
+  content: '\e80f';
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white-color;
 }

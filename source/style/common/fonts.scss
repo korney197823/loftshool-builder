@@ -28,12 +28,12 @@
 
 @font-face {
   font-family: 'check';
-  src: url('../fonts/check.eot?12463397');
-  src: url('../fonts/check.eot?12463397#iefix') format('embedded-opentype'),
-  url('../fonts/check.woff2?12463397') format('woff2'),
-  url('../fonts/check.woff?12463397') format('woff'),
-  url('../fonts/check.ttf?12463397') format('truetype'),
-  url('../fonts/check.svg?12463397#check') format('svg');
+  src: url('../fonts/check.eot?31945949');
+  src: url('../fonts/check.eot?31945949#iefix') format('embedded-opentype'),
+  url('../fonts/check.woff2?31945949') format('woff2'),
+  url('../fonts/check.woff?31945949') format('woff'),
+  url('../fonts/check.ttf?31945949') format('truetype'),
+  url('../fonts/check.svg?31945949#check') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -43,7 +43,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'check';
-    src: url('../font/check.svg?12463397#check') format('svg');
+    src: url('../font/check.svg?31945949#check') format('svg');
   }
 }
 */
@@ -98,5 +98,6 @@
 .icon-key:before { content: '\e80c'; } /* '' */
 .icon-down-open:before { content: '\e80d'; } /* '' */
 .icon-up-open:before { content: '\e80e'; } /* '' */
+.icon-ok:before { content: '\e80f'; } /* '' */
 .icon-blank:before { content: '\e810'; } /* '' */
 .icon-ok-squared:before { content: '\e811'; } /* '' */
