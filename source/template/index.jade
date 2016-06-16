@@ -40,10 +40,11 @@ html(lang="ru")
             input.checkbox-input(type="checkbox", id="ok", checked)
             label.checkbox-label(for="ok") Я человек
             span.form-autorization-question Вы точно не робот?
-            input.radio-input(type="radio", id="yes", name="capcha")
-            label.radio-label(for="yes") Я человек
-            input.radio-input(type="radio", id="no", name="capcha")
-            label.radio-label(for="no") Не уверен
+            .form-radio__wrapper
+              input.radio-input(type="radio", id="yes", name="capcha")
+              label.radio-label(for="yes") Да
+              input.radio-input(type="radio", id="no", name="capcha")
+              label.radio-label(for="no") Не уверен
             nav.menu.menu-mini
               a.menu-mini__link(href="index.html") На главную
               a.menu-mini__link(href="about.html") Войти
