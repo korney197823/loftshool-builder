@@ -15,9 +15,10 @@ html(lang="ru")
       .card__wrap
         section.card.card--front
           div.avatar__wrap
-            img.avatar(src="assets/img/avatar_2.jpg", alt="Avatar")
-          h2.card__title Денис Корниенко
-          p.card__text Личный сайт веб разработчика
+            .avatar-image__wrap
+              img.avatar(src="assets/img/avatar_2.jpg", alt="Avatar")
+            h2.card__title Денис Корниенко
+            p.card__text Личный сайт веб разработчика
           include common/_social
           nav.menu.menu-mini
             a.menu-mini__link(href="works.html") Мои работы

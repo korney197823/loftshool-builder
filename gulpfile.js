@@ -11,10 +11,6 @@ global.$ = {
     app: require('./gulp/paths/app.js')
   },
   gulp: require('gulp'),
-  svgSprite: require('gulp-svg-sprite'),
-  svgmin: require('gulp-svgmin'),
-  cheerio: require('gulp-cheerio'),
-  replace: require('gulp-replace'),
   rimraf: require('rimraf'),
   browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')()

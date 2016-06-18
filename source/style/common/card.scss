@@ -24,9 +24,12 @@
   line-height: 28px;
   color: #fff;
   text-align: center;
+  &--header {
+    margin-top: 25px;
+  }
   &--back {
     text-transform: uppercase;
-    font-family: "Sansus", sans-serif ;
+    font-family: "sansus_webissimoregular", sans-serif ;
     margin-top: 0;
     margin-bottom: 40px;
     font-size: 30px;

@@ -4,10 +4,15 @@ html(lang="ru")
 
   body
 
-    header
-      .header__wrap
+    header.header--about
+      .header-top__wrap
         include common/_social
         include common/_menu
+      div.avatar__wrap.avatar__wrap--header
+        .avatar-image__wrap
+          img.avatar(src="assets/img/avatar_2.jpg", alt="Avatar")
+        h2.card__title.card__title--header Денис Корниенко
+        p.card__text Личный сайт веб разработчика
 
     main
 

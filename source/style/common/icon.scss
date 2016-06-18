@@ -1,6 +1,10 @@
 .icon {
   font-size: 28px;
   color: #0a44aa;
+  &--header {
+    color: $white-color;
+    font-size: 21px;
+  }
   &:hover {
     color: #004cd1;
     transition: 0.5s;

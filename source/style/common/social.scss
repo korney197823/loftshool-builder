@@ -1,6 +1,9 @@
 .social {
   text-align: center;
   margin-top: 22px;
+  &--header {
+    margin-top: 0;
+  }
 }
 
 .social__link {

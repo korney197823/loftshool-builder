@@ -1,4 +1,10 @@
 .avatar__wrap {
+  &--header {
+    margin-top: 72px;
+  }
+}
+
+.avatar-image__wrap {
   width: 140px;
   height: 140px;
   margin: 0 auto;
