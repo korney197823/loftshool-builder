@@ -7,16 +7,24 @@ html {
 html,
 body {
   height: 100%;
-  margin: 0 auto;
+}
+body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
-}
-
-body {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+    @media ($tablet-width) {
+      width: 700px;
+    }
+    @media ($desktop-width) {
+      width: 1200px;
+    }
+  }
 
-}
+
 .welcome-body {
   background-color: #223b65;
   //background-image: url(../img/bg_mountain.jpg);

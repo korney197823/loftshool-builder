@@ -1,7 +1,32 @@
+.footer__description-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media ($tablet-width) {
+    flex-direction: row;
+  }
+}
 .footer__description {
+  position: relative;
+  margin: 0;
   color: #c9c9cf;
   text-align: center;
   font-family: "Roboto Light", sans-serif;
   font-size: 14px;
   line-height: 24px;
+  padding: 5px;
+  @media ($tablet-width) {
+    font-size: 16px;
+  }
+  &--name:after {
+    @media ($tablet-width) {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 14px;
+      background-color: $white-color;
+      right: 0;
+      top: 12px;
+    }
+  }
 }

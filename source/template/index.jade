@@ -18,13 +18,7 @@ html(lang="ru")
             img.avatar(src="assets/img/avatar_2.jpg", alt="Avatar")
           h2.card__title Денис Корниенко
           p.card__text Личный сайт веб разработчика
-          .social
-            a.social__link(href="https://vk.com/id29755814", target="_blank") Вконтакте
-              i.icon.icon-vkontakte
-            a.social__link(href="https://github.com/korney197823", target="_blank") GitHub
-              i.icon.icon-github
-            a.social__link(href="#") LinkedIn
-              i.icon.icon-linkedin
+          include common/_social
           nav.menu.menu-mini
             a.menu-mini__link(href="works.html") Мои работы
             a.menu-mini__link(href="about.html") Обо мне
@@ -32,11 +26,12 @@ html(lang="ru")
 
         section.card.card--back
           form.form-autorization
-            h2.card__title.card__title--back Авторизируйтесь
-            label.text-label
-            input.text-input(type="text", name="login", placeholder="Логин")
-            label.text-label.text-label--password
-            input.text-input(type="password", name="password", placeholder="Пароль")
+            h2.card__title.card__title--back Авторизуйтесь
+            .text-input__wrap
+              label.text-label
+              input.text-input(type="text", name="login", placeholder="Логин")
+              label.text-label.text-label--password
+              input.text-input(type="password", name="password", placeholder="Пароль")
             input.checkbox-input(type="checkbox", id="ok", checked)
             label.checkbox-label(for="ok") Я человек
             span.form-autorization-question Вы точно не робот?
@@ -51,5 +46,4 @@ html(lang="ru")
 
 
 
-    footer.footer.footer-welcome
-      p.footer__description &copy; Денис Корниенко <br> создано с любовью в Loftschool 2016
+    include common/_footer

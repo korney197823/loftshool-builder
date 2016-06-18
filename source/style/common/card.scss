@@ -4,6 +4,17 @@
   margin-top: 15px;
   padding-top: 40px;
   background-color: rgba(28, 31, 41, 0.5);
+  @media ($tablet-width) {
+    width: 348px;
+  }
+  @media ($desktop-width) {
+    width: 380px;
+  }
+}
+.card--back {
+
+}
+.card--front {
 }
 
 .card__title {
@@ -15,9 +26,10 @@
   text-align: center;
   &--back {
     text-transform: uppercase;
-    font-family: "sansus_webissimoregular", sans-serif ;
+    font-family: "Sansus", sans-serif ;
     margin-top: 0;
     margin-bottom: 40px;
+    font-size: 30px;
   }
 }
 .card__text {
