@@ -11,5 +11,8 @@
   font-size: 0;
   &:not(:first-of-type) {
     margin-left: 22px;
+    @media ($tablet-width) {
+      margin-left: 14px;
+    }
   }
 }

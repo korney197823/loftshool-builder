@@ -20,9 +20,9 @@ $.path.task.forEach(function(taskPath) {
   require(taskPath)();
 });
 
-$.gulp.task('svgSpriteBuild', $.gulp.series(
+$.gulp.task('svgSpriteBuild')(
   'svgSpriteBuild'
-));
+);
 
 $.gulp.task('default', $.gulp.series(
   'clean',
@@ -40,3 +40,5 @@ $.gulp.task('default', $.gulp.series(
     'serve'
   )
 ));
+
+

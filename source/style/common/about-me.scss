@@ -1,0 +1,38 @@
+.about-me__title {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'sansus_webissimoregular', sans-serif;
+  font-size: 35px;
+  line-height: 42px;
+  color: #373e42;
+  font-weight: 300;
+}
+.about-me__title-small {
+  position: relative;
+  margin-top: 23px;
+  padding-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'sansus_webissimoregular', sans-serif;
+  font-size: 21px;
+  line-height: 28px;
+  color: #373e42;
+  font-weight: 300;
+  &::after {
+    position: absolute;
+    content: '';
+    height: 55px;
+    width: 3px;
+    top: 0;
+    left: 50%;
+    background-color: #373e42;
+    transform: rotate(90deg);
+  }
+}
+.about-me-image__wrap {
+  min-height: 286px;
+}
+.about-me__image {
+  max-width: 100%;
+}

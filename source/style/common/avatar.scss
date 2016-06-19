@@ -1,6 +1,9 @@
 .avatar__wrap {
   &--header {
     margin-top: 72px;
+    @media ($tablet-width) {
+      margin-top: 30px;
+    }
   }
 }
 

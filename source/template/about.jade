@@ -5,6 +5,7 @@ html(lang="ru")
   body
 
     header.header--about
+
       .header-top__wrap
         include common/_social
         include common/_menu
@@ -12,8 +13,86 @@ html(lang="ru")
         .avatar-image__wrap
           img.avatar(src="assets/img/avatar_2.jpg", alt="Avatar")
         h2.card__title.card__title--header Денис Корниенко
-        p.card__text Личный сайт веб разработчика
+        p.card__text.card__text--header Личный сайт веб разработчика
 
     main
+      about-me__container
+        section.about-me
+          .about-me__wrap
+            h2.about-me__title Обо мне
+            .about-me__info
+              .about-me-image__wrap
+                img.about-me__image(src="assets/img/avatar_5.jpg", alt="Мое фото")
+              h3.about-me__title-small Кто я
+              p.about-me__text.
+                Я веб разработчик из Геленджика. Мне 38 лет. Я занимаюсь разработкой современных сайтов и приложений.
+                Мне нравится делать интересные и современные проекты.
+              p.about-me__text.
+                Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+                Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+        section.features
+          h3.features__title Чем я могу быть вам полезен
+          p.features__text.
+            Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные
+            задачи на Backend. Но давайте по порядку.
+          .features__list
+            .features__item
+              h3.features__item-title Frontend
+                ul.feateres__item-list
+                  li.feateres__item-item HTML5
+                  li.feateres__item-item CSS3
+                  li.feateres__item-item Javascript & jQuery
+            .features__item
+              h3.features__item-title Backend
+                ul.feateres__item-list
+                  li.feateres__item-item PHP
+                  li.feateres__item-item mySQL
+                  li.feateres__item-item Node.js & npm
+                  li.feateres__item-item Mongo.db
+            .features__item
+              h3.features__item-title WorkFlow
+                ul.feateres__item-list
+                  li.feateres__item-item Git
+                  li.feateres__item-item Gulp
+                  li.feateres__item-item Bower
+        section.info
+          .contacts
+            h2.contacts__title Контакты
+            ul.contacts__list
+              li.contacts__item
+                a.skipe__link(href="skype:korney197823") korney197823
+              li.contacts__item
+                a.mail.link(href="mailto:korney197823@gmail.com") korney197823@gmail.com
+              li.contacts__item
+                a.phone__link(href="tel:+79883337098") +7&thinsp;988&thinsp;333&thinsp;70&thinsp;98
+              li.contacts__item г. Геленджик, ул. Грибодова д.48
+          .map
+          .info-footer
+            .info-footer__info
+              p.
+                Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+            .info-footer__menu
+              ul.hamburger__list.hamburger__list--footer
+                li.hamburger__list-item.hamburger__list-item--footer
+                  a.hamburger__link(href="work.html") Мои работы
+                li.hamburger__list-item.hamburger__list-item--footer
+                  a.hamburger__link(href="blog.html") Блог
+                li.hamburger__list-item.hamburger__list-item--footer
+                  a.hamburger__link(href="about.html") Обо мне
+                li.hamburger__list-item.hamburger__list-item--footer
+                  a.hamburger__link(href="#") Авторизация
+
+              include common/_social
+            .info-footer__contacts
+              ul.contacts__list.contacts__list--footer
+                li.contacts__item.contacts__item--footer
+                  a.skipe__link.skipe__link--footer(href="skype:korney197823") korney197823
+                li.contacts__item.contacts__item
+                  a.mail__link.mail__link--footer(href="mailto:korney197823@gmail.com") korney197823@gmail.com
+                li.contacts__item.contacts__item
+                  a.phone__link.phone__link--footer(href="tel:+79883337098") +7&thinsp;988&thinsp;333&thinsp;70&thinsp;98
+                li.contacts__item.contacts__item г. Геленджик, ул. Грибодова д.48
+
+
 
     include common/_footer

@@ -9,7 +9,7 @@ module.exports = function() {
           pretty: true
         }
       }))
-      // remove all fill, style and stroke declarations in out shapes
+       //remove all fill, style and stroke declarations in out shapes
       .pipe($.gp.cheerio({
         run: function ($) {
           $('[fill]').removeAttr('fill');
@@ -18,19 +18,14 @@ module.exports = function() {
         },
         parserOptions: {xmlMode: true}
       }))
-      // cheerio plugin create unnecessary string '&gt;', so replace it.
+       //cheerio plugin create unnecessary string '&gt;', so replace it.
       .pipe($.gp.replace('&gt;', '>'))
-      // build svg sprite
+       //build svg sprite
       .pipe($.gp.svgSprite({
         mode: {
           symbol: {
-            sprite: "../sprite.svg",
-            render: {
-              scss: {
-                dest:'./source/style/common/_sprite.scss',
-                template: "sass/templates/_sprite_template.scss"
-              }
-            }
+            sprite: "../sprite.svg"
+
           }
         }
       }))

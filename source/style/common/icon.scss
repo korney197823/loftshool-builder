@@ -4,6 +4,9 @@
   &--header {
     color: $white-color;
     font-size: 21px;
+    @media ($tablet-width) {
+      font-size: 30px;
+    }
   }
   &:hover {
     color: #004cd1;
