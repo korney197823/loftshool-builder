@@ -1,3 +1,8 @@
+.about-me {
+  background-color: #f2f0e8;
+  padding-bottom: 10px;
+}
+
 .about-me__title {
   margin-top: 20px;
   text-align: center;
@@ -11,6 +16,7 @@
 .about-me__title-small {
   position: relative;
   margin-top: 23px;
+  margin-bottom: 15px;
   padding-bottom: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -24,7 +30,7 @@
     content: '';
     height: 55px;
     width: 3px;
-    top: 0;
+    top: 15px;
     left: 50%;
     background-color: #373e42;
     transform: rotate(90deg);
@@ -35,4 +41,11 @@
 }
 .about-me__image {
   max-width: 100%;
+}
+
+.about-me__text {
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 24px;
+  line-height: 24px;
 }

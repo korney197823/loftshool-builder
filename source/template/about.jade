@@ -70,7 +70,7 @@ html(lang="ru")
           .info-footer
             .info-footer__info
               p.
-                Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+                Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
             .info-footer__menu
               ul.hamburger__list.hamburger__list--footer
                 li.hamburger__list-item.hamburger__list-item--footer
@@ -87,7 +87,10 @@ html(lang="ru")
               ul.contacts__list.contacts__list--footer
                 li.contacts__item.contacts__item--footer
                   a.skipe__link.skipe__link--footer(href="skype:korney197823") korney197823
+
                 li.contacts__item.contacts__item
+                  svg(width="24", height="24")
+                    use(xlink:href='#skype')
                   a.mail__link.mail__link--footer(href="mailto:korney197823@gmail.com") korney197823@gmail.com
                 li.contacts__item.contacts__item
                   a.phone__link.phone__link--footer(href="tel:+79883337098") +7&thinsp;988&thinsp;333&thinsp;70&thinsp;98
@@ -96,3 +99,4 @@ html(lang="ru")
 
 
     include common/_footer
+    script(src="assets/js/app.js")

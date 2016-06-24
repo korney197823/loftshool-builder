@@ -1,3 +1,10 @@
+.hamburger {
+  svg {
+    width: 26px;
+    height: 26px;
+    fill: $white-color;
+  }
+}
 .hamburger__list {
   display: none;
   list-style-type: none;
