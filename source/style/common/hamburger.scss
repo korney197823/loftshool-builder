@@ -1,8 +1,13 @@
 .hamburger {
+  position: relative;
   svg {
     width: 26px;
     height: 26px;
     fill: $white-color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
   }
 }
 .hamburger__list {
