@@ -1,0 +1,89 @@
+.m-title {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #373e42;
+}
+
+.feateres__item-item {
+  width: 50%;
+}
+
+@mixin graph($cx, $cy, $r, $stroke, $stroke-width, $fill) {
+  cx: $cx;
+  cy: $cy;
+  r: $r;
+  stroke: $stroke;
+  stroke-width: $stroke-width;
+  fill: $fill;
+}
+// Переменные
+// Исходные значения
+$graph__d : 110;
+$graph__sw : 20;
+  // Вычисленные значения
+$graph__r : ($graph__d / 2) - ($graph__sw / 2);
+$graph__x : $graph__d / 2;
+$graph__y : $graph__d / 2;
+$graph__p : 2 * 3.14 * $graph__r;
+
+.m-skills {
+  margin: 0 0 0 0;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__item {
+    position: relative;
+    margin-bottom: 27px;
+    padding: 0;
+    width: #{$graph__d}px;
+    height: #{$graph__d}px;
+
+  }
+  &__title {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    color: #243994;
+    font-size: 12.8px;
+    font-weight: 500;
+  }
+}
+.m-graph {
+  transform: rotate(-90deg);
+  height: 100%;
+  width: 100%;
+  viewBox: 0 0 $graph__d $graph__d;
+  &__canvas {
+    @include graph($graph__x, $graph__y, $graph__r, #dfdcd5, $graph__sw, transparent);
+  }
+  &__progress {
+    @include graph($graph__x, $graph__y, $graph__r, #1056d1, $graph__sw, transparent);
+    @each $percent in (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100) {
+      &_#{$percent} {
+        stroke-dasharray: ($graph__p / 100 * $percent) $graph__p;
+      }
+    }
+  }
+}
+
+.m-title {
+  &_4 {
+    font-size: 21px;
+    font-weight: 500;
+    color: #474b57;
+    margin: 0 0 15px 0;
+  }
+}

@@ -1,3 +1,22 @@
+.content--flip {
+  perspective: 1000px;
+  width: 300px;
+  margin: 0 auto;
+  @media ($tablet-width) {
+    width: 348px;
+  }
+  @media ($desktop-width) {
+    width: 380px;
+  }
+  &.hover .card__wrap {
+    transform: rotateY(180deg);
+  }
+}
+.card__wrap {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
 .card {
   width: 300px;
   margin: 0 auto;
@@ -10,12 +29,21 @@
   @media ($desktop-width) {
     width: 380px;
   }
+  &--front, &--back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &--front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  &--back {
+    transform: rotateY(180deg);
+  }
 }
-.card--back {
 
-}
-.card--front {
-}
 
 .card__title {
   margin-bottom: 0;

@@ -5,13 +5,15 @@ html(lang="ru")
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
-    //video(autoplay loop muted class="bgvideo" id="bgvideo")
-    //  source(src="assets/img/night.mp4", type="video/mp4")
+    video(autoplay loop muted class="bgvideo" id="bgvideo")
+      source(src="assets/img/night.mp4", type="video/mp4")
+    .background
+      img(src="assets/img/bg_mountain.jpg")
     header.header.header--start
 
       a.button.button--autorization(href="#") Авторизоваться
 
-    main.content
+    main.content.content--flip(ontouchstart="this.classList.toggle('hover');")
       .card__wrap
         section.card.card--front
           div.avatar__wrap
@@ -29,9 +31,11 @@ html(lang="ru")
           form.form-autorization
             h2.card__title.card__title--back Авторизуйтесь
             .text-input__wrap
-              label.text-label
+              label
+                .text-label
               input.text-input(type="text", name="login", placeholder="Логин")
-              label.text-label.text-label--password
+              label
+                .text-label.text-label--password
               input.text-input(type="password", name="password", placeholder="Пароль")
             input.checkbox-input(type="checkbox", id="ok", checked)
             label.checkbox-label(for="ok") Я человек

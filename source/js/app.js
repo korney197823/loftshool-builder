@@ -52,4 +52,14 @@
   }
   catch( e ){}
 
+
 }( window, document ) );
+
+
+$(document).ready(function(){
+  var buttonAuth = document.querySelector('.button--autorization');
+
+  buttonAuth.addEventListener('click', function() {
+    $('.content--flip').addClass('hover');
+  });
+});

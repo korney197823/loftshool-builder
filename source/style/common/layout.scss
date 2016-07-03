@@ -13,25 +13,33 @@ body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
-  width: 320px;
+  //width: 320px;
   margin: 0 auto;
   padding: 0;
     @media ($tablet-width) {
-      width: 768px;
+      //width: 768px;
     }
     @media ($desktop-width) {
-      width: 1200px;
+      //width: 1200px;
     }
   }
 
 
 .welcome-body {
-  background-color: #223b65;
-  //background-image: url(../img/bg_mountain.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: auto 30%;
+  position: relative;
 
+
+
+}
+.background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  img {
+    display: block;
+    max-width: 100%;
+  }
 }
 header,
 footer {

@@ -1,5 +1,5 @@
 .features {
-  padding: 25px 10px;
+  padding: 25px 10px 0;
   background-color: #f4f5f0;
 }
 
@@ -27,26 +27,8 @@
   }
 }
 .features__text {
+  margin-bottom: 18px;
   font-size: 14px;
   line-height: 24px;
   line-height: 24px;
-}
-.features__item-title {
-  margin-top: 20px;
-  text-align: center;
-  font-family: "Roboto Medium", sans-serif;
-  font-size: 21px;
-  line-height: 28px;
-  font-weight: 300;
-  color: #373e42;
-}
-.feateres__item-list {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.feateres__item-item {
-  width: 50%;
 }
